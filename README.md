@@ -1,0 +1,1 @@
+This is personal JS selflearning page, for personal purpose only

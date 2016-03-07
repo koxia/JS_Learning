@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+#div1 {width:50px;height:50px; background:red; display:none;}
+#div2 {width:300px;height: 200px;background: #ccc;border:1px}
+</style>
+
+<script>
+function btn1()
+{
+  document.getElementById("p1").innerHTML = "Hello World!"
+  document.getElementById("p2").innerHTML = "JUST DO IT!"
+  var oDiv1 = document.getElementById("div1")
+    if (oDiv1.style.display=="block")
+      {
+        oDiv1.style.display="none"
+      }
+      else
+      {
+        oDiv1.style.display="block"
+      }
+}
+
+function btn2()
+{
+  var oDiv1 = document.getElementById("div1")
+  if (oDiv1.style.display=="block")
+    {
+      document.getElementById("p2").innerHTML = "I LIKE IT!"
+    }
+    else
+    {
+        document.getElementById("p2").innerHTML = "DO YOU LIKE ME?"
+    }
+}
+
+</script>
+
+</head>
+<body>
+<h1>中文标题</h1>
+<p id="p1">This is Paragrah</p>
+<button type="button" name="test1" onclick="btn1()">button1</button>
+<P></p>
+<div id="div1">
+</div>
+<p></p>
+<hr/>
+<button type="button" name="test2" onclick="btn2()">button2</button>
+<Div id="div2">
+<p id="p2">This is JS self learning project</p>
+</div>
+</body>
+</html>
